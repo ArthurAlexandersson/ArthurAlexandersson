@@ -27,22 +27,10 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-" PLUGINS ---------------------------------------------------------------- {{{
-
-" Plugin code goes here.
-
-" }}}
-
-
 " MAPPINGS --------------------------------------------------------------- {{{
 inoremap jk <esc>
 let mapleader = " "
 nnoremap <SPACE> <nop>
-
-" }}}
-" TEST ---{{{
-
-
 
 " }}}
 
@@ -54,15 +42,3 @@ augroup filetype_vim
     autocmd!
     autocmd FileType vim setlocal foldmethod=marker
 augroup END
-
-" More Vimscripts code goes here.
-
-" }}}
-
-
-" STATUS LINE ------------------------------------------------------------ {{{
-
-" Status bar code goes here.
-
-" }}}
-
