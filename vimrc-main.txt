@@ -1,0 +1,59 @@
+" SET ------------------------------- {{{
+set nocompatible              " be iMproved, required
+filetype on" required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+call vundle#end()            " required
+filetype plugin on    " required
+
+syntax on 
+
+set t_Co=256
+
+set backspace=indent,eol,start
+set wrap
+" enable soft wrapping at the edge of the screen
+set linebreak
+" make it not wrap in the middle of a "word"
+
+au BufNewFile, BufRead *.py
+set noexpandtab " Make sure that every file uses real tabs, not spaces
+set shiftround  " Round indent to multiple of 'shiftwidth'
+set smartindent " Do smart indenting when starting a new line
+set autoindent  " Copy indent from current line, over to the new line
+filetype plugin indent on
+set number
+set nocompatible
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set nobackup
+set number
+set cursorline
+
+set expandtab
+set nobackup
+
+set incsearch
+set ignorecase
+set smartcase
+
+set showcmd
+set showmode
+set showmatch
+set hlsearch
+
+set history=1000
+
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+"}}}
+
+" PLUGINS -------------------------------- {{{
+ augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+"}}}
